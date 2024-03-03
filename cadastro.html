@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/Cadastro.css">
+  <link rel="shortcut icon" href="assets/img/faviconCV.png" type="image/x-icon" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <title>Área de Cadastro</title>
+
+</head>
+
+<body>
+  <section>
+    <article id="fade" class="hide"></article>
+    <article id="modal" class="hide">
+      <article class="modal-header">
+        <h2 id="mensagem"></h2>
+        <button id="fechar-modal"> Fechar </button>
+      </article>
+    </article>
+  </section>
+  <a href="usuario.html"><img class="logo-user" src="assets/img/logos/Honda-Civic-Logo-1987.png" alt="logocivic" /></a>
+  <main class="container" id="container">
+    <section class="form-container sign-in-container">
+      <form id="form-cadastro" class="form-style" action="inserir.php" method="post">
+        <label for="Nome">Nome</label>
+        <input class="entradas" type="text" id="name" name="nome" placeholder="Nome" />
+        <label for="Sobrenome">Sobrenome</label>
+        <input class="entradas" type="text" id="sobrenome" name="sobrenome" placeholder="Sobrenome" />
+        <label for="Data_de_nascimento">Data de Nascimento</label>
+        <input class="entradas" type="date" id="date" name="data_nascimento" placeholder="Data de Nascimento" />
+        <label for="genero">Genero</label>
+        <select class="entradas" name="genero" id="genero">
+          <option value="" disabled selected>Selecione o sexo</option>
+          <option value="masculino">Masculino</option>
+          <option value="feminino">Feminino</option>
+          <option value="outros">Outros</option>
+        </select>
+        <label for="Nome_materno">Nome Materno</label>
+        <input class="entradas" type="text" id="nomeMaterno" name="nome_materno" placeholder="Nome Materno" />
+        <label for="CPF">CPF</label>
+        <input class="entradas" type="text" id="cpf" name="CPF" placeholder="CPF" maxlength="14"/>
+        <label for="celular">Telefone Celular:</label>
+        <input class="entradas" type="text" id="celular" name="celular" placeholder="Telefone Celular:" maxlength="15"/>
+        <label for="Fixo">Telefone Fixo:</label>
+        <input class="entradas" type="text" id="fixo" name="Fixo" placeholder="Telefone Fixo" maxlength="14"/>
+        <label for="Endereço">Endereço Completo:</label>
+        <input class="entradas" type="text" id="endereco" name="endereco" placeholder="Endereço Completo:" />
+        <label for="Login">Login:</label>
+        <input class="entradas" type="login" id="entrar" name="login" placeholder="Login:" />
+        <label for="Senha">Senha:</label>
+        <input class="entradas pass" id="senha" name="senha" type="password" placeholder="Senha" />
+        <img src="assets/img/carossel/eye.png" id="olho" class="olho">
+        <label for="confirme_senha">Confire sua senha</label>
+        <input class="entradas pass" id="confirmeSenha" type="password" name="confirme_senha"
+          placeholder="Confirme sua senha" />
+        <input id="botao-enviar" class="button-form" type="submit" value="Enviar" />
+      </form>
+
+
+
+
+    </section>
+
+
+
+
+
+  </main>
+  <!-- <script src="js/validacao.js"></script> -->
+  <script src="js/dados.js"></script>
+  <!-- <script src="js/transitionForm.js"></script>
+  <script src="js/cadastramento.js"></script> -->
+
+
+</body>
+
+</html>

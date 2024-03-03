@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+
+body{
+   background-color: #DEDEDE;
+}
+
+.logocivic{
+    width: 100px;
+    margin-left: 30px;
+}
+header {
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,1) 15%, rgba(194,26,26,1) 72%);
+    box-shadow: 0 0 8px 1px black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 5px;
+    width: 100%;
+    
+}
+
+header nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+header nav ul {
+   
+    display: flex;
+    margin-right: 40px;
+    align-items: center;
+    gap: 25px;
+    font-size: 25px;
+    flex-wrap: wrap;
+}
+
+header nav ul li a {
+    color: #ffffff;
+    font-weight: bold;
+    transition: color 0.3s ease-in-out;
+}
+
+header ul li a:hover {
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+
+#button-index {
+    font-weight: bold;
+    color: white;
+    font-size: 25px;
+    width: 150px;
+    height: 40px;
+    background: none;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: color 0.3s;
+    transition: border 0.3s;
+    cursor: pointer;
+}
+
+#button-index:hover {
+    color: black;
+    border: 2px solid black;
+}
+
+
+#button-thema {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    position: flex;
+    flex-wrap: wrap;
+    background-color: white;
+    border: 0;
+    box-shadow: 0 0 10px 1px rgb(2, 0, 0);
+    transition: color 300ms, background 300ms;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+#button-thema:hover {
+    color: white;
+    background-color: rgb(5, 5, 5);
+    box-shadow: 0 0 10px 1px rgb(112, 112, 112);
+}
+
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.label {
+    background-color: #111;
+    border-radius: 50px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    position: relative;
+    height: 26px;
+    width: 50px;
+    transform: scale(1.5);
+}
+
+.label .ball {
+    background-color: #fff;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    height: 22px;
+    width: 22px;
+    transform: translateX(0px);
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked+.label .ball {
+    transform: translateX(24px);
+}
+
+.fa-moon {
+    color: #f1c40f;
+    width: 15px;
+}
+
+.fa-sun {
+    color: #f39c12;
+    width: 15px;
+}
+
+.inicial{
+    text-align: center;
+    margin: 200px;
+    font-size: 100px;
+}
